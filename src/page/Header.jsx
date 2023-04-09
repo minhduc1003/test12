@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Header = () => {
     return (
         <>
             <div>
-            <NavLink to={"/1"}>1</NavLink>
-            <NavLink to={"/2"}>2</NavLink>
+            <Link reloadDocument to={"/1"}>1</Link>
+            <Link reloadDocument to={"/2"}>2</Link>
         </div>
         <Outlet></Outlet>
         </>
